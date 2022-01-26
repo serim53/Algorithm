@@ -11,21 +11,18 @@ check = list(map(int, sys.stdin.readline().split()))
 
 cards.sort()
 
-
 def binary_search(array, target, start, end):
+    result = 0
     while start <= end:
         mid = (start + end) // 2
         if array[mid] == target:
-            return mid
+            result += 1
         elif array[mid] > target:
             end = mid - 1
         else:
             start = mid + 1
-    return None
+    return result
 
 
 for i in range(M):
-    if binary_search(cards, check[i], 0, N - 1) is not None:
-        print(1, end=' ')
-    else:
-        print(0, end=' ')
+    print(str(binary_search(cards, check[i], 0, N - 1)), end=' ')
