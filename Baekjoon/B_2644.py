@@ -20,4 +20,3 @@ check = [0] * (n + 1)
 dfs(s)
 
 print(check[e] if check[e] > 0 else -1)
-
