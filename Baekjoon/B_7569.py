@@ -1,7 +1,7 @@
 import sys
 from collections import deque
 
-m, n, h = map(int, input().split())  # mn크기, h상자수
+m, n, h = map(int, input().split())
 graph = []
 queue = deque([])
 
@@ -14,9 +14,10 @@ for i in range(h):
                 queue.append([i, j, k])
     graph.append(tmp)
 
-dx = [-1, 1, 0, 0, 0, 0]
+dx = [1, -1, 0, 0, 0, 0]
 dy = [0, 0, 1, -1, 0, 0]
 dz = [0, 0, 0, 0, 1, -1]
+
 while (queue):
     x, y, z = queue.popleft()
 
