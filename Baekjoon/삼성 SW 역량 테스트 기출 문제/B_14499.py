@@ -1,5 +1,7 @@
 import sys
 input = sys.stdin.readline
+
+
 def move(direction):
     if direction == 1:
         dice[1], dice[3], dice[4], dice[6] = dice[3], dice[6], dice[1], dice[4]
@@ -9,11 +11,15 @@ def move(direction):
         dice[1], dice[2], dice[5], dice[6] = dice[2], dice[6], dice[1], dice[5]
     elif direction == 4:
         dice[1], dice[2], dice[5], dice[6] = dice[5], dice[1], dice[6], dice[2]
+
+
 def dire(direction):
     if direction == 1: return 0, 1
     elif direction == 2: return 0, -1
     elif direction == 3: return -1, 0
     elif direction == 4: return 1, 0
+
+
 n, m, x, y, k = map(int, input().split())
 s = []
 for i in range(n):
