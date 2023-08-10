@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90ec1034-1709-43ac-9de4-8619878652f9" name="Changes" comment="1238 : 파티">
+    <list default="true" id="90ec1034-1709-43ac-9de4-8619878652f9" name="Changes" comment="13549 : 숨바꼭질 3">
+      <change afterPath="$PROJECT_DIR$/Baekjoon/B_15663.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
       <recent name="C:\Algorithm\Baekjoon" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.B_13549">
+  <component name="RunManager" selected="Python.B_15663">
     <configuration name="B_10818" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="B_1924" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="B_15663" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,7 +136,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baekjoon/B_1924.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baekjoon/B_15663.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.B_15663" />
         <item itemvalue="Python.B_13549" />
         <item itemvalue="Python.B_11726" />
         <item itemvalue="Python.B_1463" />
         <item itemvalue="Python.B_10818" />
-        <item itemvalue="Python.B_1924" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691503497337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="13549 : 숨바꼭질 3">
+      <created>1691631366851</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691631366851</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +210,7 @@
     <MESSAGE value="15666 : N과 M (12)" />
     <MESSAGE value="update" />
     <MESSAGE value="1238 : 파티" />
-    <option name="LAST_COMMIT_MESSAGE" value="1238 : 파티" />
+    <MESSAGE value="13549 : 숨바꼭질 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="13549 : 숨바꼭질 3" />
   </component>
 </project>
