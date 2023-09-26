@@ -24,8 +24,10 @@ def bfs(start):
                     result = n, visited[n]
     return result
 
-
+# 2번의 bfs
+# 1. 첫 번째 노드에서 가장 멀리 떨어진 노드를 찾음
 node, _ = bfs(1)
+# 2. 해당 노드에서 가장 멀리 있는 노드와의 거리를 찾음
 _, distance = bfs(node)
 
 print(distance)
