@@ -1,5 +1,4 @@
 def solution(friends, gifts):
-    answer = 0
     nums = {}
     len_friends = len(friends)
     for i in range(len_friends):
@@ -17,12 +16,18 @@ def solution(friends, gifts):
 
     next_gift = {}
     for i in range(len_friends):
-        for j in range(len_friends):
-            if i == j:
-                continue
-            if given_infos[i][j] == 0 and given_infos[j][i] == 0:
+        next_gift[i] = 0
+    for i in range(len_friends):
+        for j in range(i + 1, len_friends):
+            if (given_infos[i][j] == 0 and given_infos[j][i] == 0) or given_infos[i][j] == given_infos[j][i]:
+                if degree[i] > degree[j]:
+                    next_gift[i] += 1
+                elif degree[i] < degree[j]:
+                    next_gift[j] += 1
+            else:
+                if given_infos[i][j] > given_infos[j][i]:
+                    next_gift[i] += 1
+                else:
+                    next_gift[j] += 1
 
-
-    return answer
-
-print(solution(["muzi", "ryan", "frodo", "neo"], ["muzi frodo", "muzi frodo", "ryan muzi", "ryan muzi", "ryan muzi", "frodo muzi", "frodo ryan", "neo muzi"]))
+    return max(next_gift.values())
